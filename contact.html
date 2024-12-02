@@ -219,10 +219,12 @@
       </div>
       <div class="row once-in">
          <div class="flex-col">
-            <form class="form" method="post" action="https://afpangestu.github.io/contact/success" enctype="multipart/form-data" novalidate>
+            <form class="form" method="post" action="https://api.web3forms.com/submit" enctype="multipart/form-data" novalidate>
                 <input type="hidden" name="access_key" value="d193d498-263a-4bc2-8605-ed0cb51453e9">
                <div class="form-col">
                   <h5>01</h5>
+                   <input type="hidden" name="redirect" value="https://afpangestu.github.io/contact/success">
+                   <input type="hidden" name="subject" value="New Submission from afpangestu.github.io">
                   <label class="label" for="name">What's your name?</label>
                   <input class="field" type="text" id="form-name" name="name" value="" required placeholder="John Doe *">
                                  </div>
@@ -251,7 +253,7 @@
                      <div class="btn-click magnetic" data-strength="100" data-strength-text="50">
                         <div class="btn-fill"></div>
                         <span class="btn-text">
-                           <input type="submit" name="submit" value="Send it!" class="form-btn">
+                           <input type="submit" value="Send it!" class="form-btn">
                         </span>
                      </div>
                   </div>
