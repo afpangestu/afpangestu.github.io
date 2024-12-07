@@ -969,25 +969,60 @@ function initVisualFilter() {
         }, 300);
       }
     });
-    $(".iot-btn").click(function () {
+    $(".java-btn").click(function () {
       if ($(this).hasClass("active")) {
       } else {
         $(".toggle-row .btn-normal").removeClass("active");
         $(".toggle-row .btn-normal").addClass("not-active");
         $(this).addClass("active");
         $(this).removeClass("not-active");
-        // Cookies.set("filter", "iot", { expires: 1 });
+        // Cookies.set("filter", "java", { expires: 1 });
         setTimeout(function () {
           $(
             ".mouse-pos-list-image li, .mouse-pos-list-image-wrap li, .work-tiles li"
           ).removeClass("visible");
           $(
-            ".mouse-pos-list-image li.iot, .mouse-pos-list-image-wrap li.iot, .work-tiles li.iot"
+            ".mouse-pos-list-image li.java, .mouse-pos-list-image-wrap li.java, .work-tiles li.java"
           ).addClass("visible");
         }, 300);
       }
     });
-
+    $(".selenium-btn").click(function () {
+      if ($(this).hasClass("active")) {
+      } else {
+        $(".toggle-row .btn-normal").removeClass("active");
+        $(".toggle-row .btn-normal").addClass("not-active");
+        $(this).addClass("active");
+        $(this).removeClass("not-active");
+        // Cookies.set("filter", "selenium", { expires: 1 });
+        setTimeout(function () {
+          $(
+            ".mouse-pos-list-image li, .mouse-pos-list-image-wrap li, .work-tiles li"
+          ).removeClass("visible");
+          $(
+            ".mouse-pos-list-image li.selenium, .mouse-pos-list-image-wrap li.selenium, .work-tiles li.selenium"
+          ).addClass("visible");
+        }, 300);
+      }
+    });
+    $(".web-btn").click(function () {
+      if ($(this).hasClass("active")) {
+      } else {
+        $(".toggle-row .btn-normal").removeClass("active");
+        $(".toggle-row .btn-normal").addClass("not-active");
+        $(this).addClass("active");
+        $(this).removeClass("not-active");
+        // Cookies.set("filter", "web", { expires: 1 });
+        setTimeout(function () {
+          $(
+            ".mouse-pos-list-image li, .mouse-pos-list-image-wrap li, .work-tiles li"
+          ).removeClass("visible");
+          $(
+            ".mouse-pos-list-image li.web, .mouse-pos-list-image-wrap li.web, .work-tiles li.web"
+          ).addClass("visible");
+        }, 300);
+      }
+    });
     $(".grid-row .btn").click(function () {
       if ($(this).hasClass("active")) {
       } else {
